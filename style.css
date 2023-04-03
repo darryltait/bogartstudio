@@ -177,7 +177,7 @@ li#menu-item-866,
 li#menu-item-581 {
   /* background-color: tan; */
   width: 230px;
-  height: 100px;
+  /* height: 100px; */
 }
 li#menu-item-581 {
   border-bottom: none;
@@ -1094,6 +1094,8 @@ p.title:hover {
 }
 .nav-white.visible {
   transition-delay: 0s;
+  position: relative;
+  top: -35px;
 }
 
 .close-btn {
@@ -1834,6 +1836,7 @@ p.artist-block-info-mobile-blurb {
       padding: 20px;
       text-align: center;
       left: 4rem;
+      
       box-shadow: -7px 10px 7px rgba(0,0,0,0.4);
       position: absolute;
       top: 42%; */
@@ -2304,14 +2307,14 @@ li.menu-item-170 {
 @media (max-width: 600px) {
   ul.sub-menu {
     margin: 0;
-    padding: 15px;
+    padding: 15px 15px 0;
   }
   ul.sub-menu li {
     padding: 10px;
     /* margin: -10px; */
   }
   .drop-menu ul li a {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 /* ul.sub-menu {
@@ -2845,6 +2848,12 @@ box-shadow: 0px 0px 0px .5px black inset;
   width: 100%;
   height: 100%;
 }
+
+a.telephone {
+  text-decoration: none;
+  color: black;
+}
+
 @media (max-width: 700px) {
   .header-phone {
     position: absolute;
@@ -2857,18 +2866,23 @@ box-shadow: 0px 0px 0px .5px black inset;
 @media (max-width: 940px) {
   .header-phone {
   position: absolute;
+  font-size: 14px;
    right: 10px;
    padding: 28px 34px 0 0;
+   font-weight: bold;
   
     }
 }
-.header-phone {
-  /* position: relative; */
-  font-size: 14px;
-  padding: 28px 34px 0 0;
-  font-weight: bold;
-
+@media (min-width: 940px) {
+  .header-phone {
+    /* position: relative; */
+    font-size: 14px;
+    padding: 28px 34px 0 0;
+    font-weight: bold;
+  
+  }
 }
+
 
 
 .sold {
